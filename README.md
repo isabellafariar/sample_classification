@@ -6,7 +6,6 @@ Types of classification:
 
   class sklearn.linear_model.RidgeClassifier(alpha=1.0, *, fit_intercept=True, normalize='deprecated', copy_X=True, max_iter=None, tol=0.001, class_weight=None, solver='auto', positive=False, random_state=None)
   
-- sklearn.linear_model.RidgeClassifierCV
-
+- sklearn.linear_model.RidgeClassifierCV <\br>
   class sklearn.linear_model.RidgeClassifierCV(alphas=(0.1, 1.0, 10.0), *, fit_intercept=True, normalize='deprecated', scoring=None, cv=None, class_weight=None, store_cv_values=False)
 - 
