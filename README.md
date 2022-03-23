@@ -50,6 +50,15 @@ class sklearn.naive_bayes.GaussianNB(*, priors=None, var_smoothing=1e-09)
 - sklearn.tree.DecisionTreeClassifier<br>
 class sklearn.tree.DecisionTreeClassifier(*, criterion='gini', splitter='best', max_depth=None, min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_features=None, random_state=None, max_leaf_nodes=None, min_impurity_decrease=0.0, class_weight=None, ccp_alpha=0.0)
 
+- sklearn.ensemble.RandomForestClassifier<br>
+class sklearn.ensemble.RandomForestClassifier(n_estimators=100, *, criterion='gini', max_depth=None, min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_features='auto', max_leaf_nodes=None, min_impurity_decrease=0.0, bootstrap=True, oob_score=False, n_jobs=None, random_state=None, verbose=0, warm_start=False, class_weight=None, ccp_alpha=0.0, max_samples=None)
+
+- sklearn.ensemble.ExtraTreesClassifier<br>
+class sklearn.ensemble.ExtraTreesClassifier(n_estimators=100, *, criterion='gini', max_depth=None, min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_features='auto', max_leaf_nodes=None, min_impurity_decrease=0.0, bootstrap=False, oob_score=False, n_jobs=None, random_state=None, verbose=0, warm_start=False, class_weight=None, ccp_alpha=0.0, max_samples=None)
+
+- sklearn.ensemble.VotingClassifier<br>
+class sklearn.ensemble.VotingClassifier(estimators, *, voting='hard', weights=None, n_jobs=None, flatten_transform=True, verbose=False)
+
 - sklearn.multiclass.OneVsRestClassifier<br>
 class sklearn.multiclass.OneVsRestClassifier(estimator, *, n_jobs=None)
 
@@ -61,4 +70,10 @@ class sklearn.multioutput.MultiOutputClassifier(estimator, *, n_jobs=None)
 
 - sklearn.multioutput.ClassifierChain<br>
 class sklearn.multioutput.ClassifierChain(base_estimator, *, order=None, cv=None, random_state=None)
+
+- sklearn.calibration.CalibratedClassifierCV<br>
+class sklearn.calibration.CalibratedClassifierCV(base_estimator=None, *, method='sigmoid', cv=None, n_jobs=None, ensemble=True)
+
+- sklearn.neural_network.MLPClassifier<br>
+class sklearn.neural_network.MLPClassifier(hidden_layer_sizes=(100,), activation='relu', *, solver='adam', alpha=0.0001, batch_size='auto', learning_rate='constant', learning_rate_init=0.001, power_t=0.5, max_iter=200, shuffle=True, random_state=None, tol=0.0001, verbose=False, warm_start=False, momentum=0.9, nesterovs_momentum=True, early_stopping=False, validation_fraction=0.1, beta_1=0.9, beta_2=0.999, epsilon=1e-08, n_iter_no_change=10, max_fun=15000)
 
